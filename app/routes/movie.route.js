@@ -6,10 +6,10 @@ module.exports = app => {
     //Obtener todas las peliculas
     router.get("/", movies.getAll);
     //Obtener por nombre de pelicula
-    router.get("/", clientes.getByName);
+    router.get("/", movies.getByName);
     //Actualizar Pelicula
-    router.put("/update/:id", clientes.update);
+    router.put("/update/:id", movies.update);
     //Eliminar Pelicula
-    router.delete("/delete/:id", clientes.delete);
+    router.delete("/delete/:id", movies.delete);
     app.use("/api/movies", router);
 };

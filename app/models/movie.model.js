@@ -10,7 +10,7 @@ module.exports = (sequelize, Sequelize) => {
             type: Sequelize.STRING
         },
         duracion: {
-            type: Sequelize.INT
+            type: Sequelize.SMALLINT
         },
         tipo: {
             type: Sequelize.STRING
@@ -19,8 +19,8 @@ module.exports = (sequelize, Sequelize) => {
             type: Sequelize.STRING
         },
         anio_lanzamiento: {
-            type: Sequelize.INT
+            type: Sequelize.SMALLINT
         }
     });
-    return Cliente;
+    return Movie;
 };
