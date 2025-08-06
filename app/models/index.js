@@ -20,6 +20,6 @@ const sequelize = new Sequelize(dbConfig.DB, dbConfig.USER, dbConfig.PASSWORD, {
 const db = {};
 db.Sequelize = Sequelize;
 db.sequelize = sequelize;
-db.clientes = require("./movie.model.js")(sequelize, Sequelize);
+db.movies = require("./movie.model.js")(sequelize, Sequelize);
 
 module.exports = db;

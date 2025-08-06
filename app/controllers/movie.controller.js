@@ -1,5 +1,5 @@
 const db = require("../models");
-const Movie = db.movie;
+const Movie = db.movies;
 const Op = db.Sequelize.Op;
 
 exports.create = (req, res) => {
