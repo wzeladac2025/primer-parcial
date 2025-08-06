@@ -21,7 +21,7 @@ exports.create = (req, res) => {
     };
 
 
-    Movie.create(cliente)
+    Movie.create(movie)
         .then(data => {
             res.send(data);
         })
